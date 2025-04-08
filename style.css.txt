@@ -1,47 +1,124 @@
-/* style.css */
-
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f4f8;
-    color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa;
+  color: #333;
 }
 
 header {
-    background-color: #1e2a38;
-    color: white;
-    text-align: center;
-    padding: 2rem 1rem;
+  background-color: #343a40;
+  color: white;
+  text-align: center;
+  padding: 2rem;
 }
 
 header h1 {
-    margin: 0;
-    font-size: 2.5rem;
+  font-size: 3rem;
+  margin: 0;
 }
 
 header p {
-    margin-top: 0.5rem;
-    font-size: 1.1rem;
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
 }
 
 section {
-    padding: 2rem 1rem;
-    max-width: 800px;
-    margin: auto;
+  padding: 2rem 1rem;
+  max-width: 1000px;
+  margin: auto;
 }
 
-section h2 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: #1e2a38;
+#about h2 {
+  font-size: 2.5rem;
+  color: #343a40;
+  border-bottom: 2px solid #343a40;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+#projects h2 {
+  font-size: 2.5rem;
+  color: #343a40;
+  border-bottom: 2px solid #343a40;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.project {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1.5rem;
+  width: calc(50% - 1rem);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.project h3 {
+  font-size: 1.8rem;
+  color: #007bff;
+}
+
+.project p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.project strong {
+  color: #dc3545;
+}
+#contact {
+  background-color: #343a40;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+#contact p {
+  font-size: 1.2rem;
+}
+
+#contact a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#contact a:hover {
+  text-decoration: underline;
 }
 
 footer {
-    background-color: #dbe4ea;
-    text-align: center;
-    padding: 1rem;
-    margin-top: 2rem;
-    font-size: 0.9rem;
-    color: #555;
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 1rem;
+  margin-top: 2rem;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .project-list {
+    flex-direction: column;
+  }
+
+  .project {
+    width: 100%;
+  }
 }
